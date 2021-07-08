@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Démineur</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="shortcut icon" href="img/smiley-dead.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="level-select" id="level-select">
+        <a class="level-select__choice active" id="beginner">Débutant</a>
+        <a class="level-select__choice" id="intermediate">Intermediaire</a>
+        <a class="level-select__choice" id="expert">Expert</a>
+    </div>
+    <div class="demineur">
+        <div class="top">
+            <div class="counter" id="mine-counter"></div>
+            <div class="start-stop" id="start" onclick="restart()"></div>
+            <div class="timer" id="timer"></div>
+        </div>
+        <div class="grid" id="board"></div>
+    </div>
+    <div class="result" id="result"></div>
+    <script src="./js/demineur.js"></script>
+    <script>
+        init(level);
+    </script>
+</body>
+</html>
