@@ -523,7 +523,7 @@ function convertTime(tempsMesure){
             return temps;
         }
         
-        temps = minutes + ' ' + min + ' ' + secondes + ' ' + sec;
+        temps = minutes + ' ' + min + ' et ' + secondes + ' ' + sec;
         return temps;
 }
 
