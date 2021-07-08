@@ -1,0 +1,28 @@
+{
+  "name": "demineur",
+  "version": "1.0.0",
+  "description": "Création d'un démineur en javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass --watch ./sass/styles.scss:./public/css/styles.css"
+  },
+  "author": "Raphael Desitter <rdesitter@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.35.1"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rdesitter/minesweeper.git"
+  },
+  "keywords": [
+    "minesweeper",
+    "javascript"
+  ],
+  "bugs": {
+    "url": "https://github.com/rdesitter/minesweeper/issues"
+  },
+  "homepage": "https://github.com/rdesitter/minesweeper#readme"
+}
