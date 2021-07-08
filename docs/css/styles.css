@@ -1,0 +1,205 @@
+*, ::after, ::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  cursor: default;
+}
+
+::selection {
+  background-color: #e5e5e5;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background: #22D1D4;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "comfortaa", sans-serif;
+}
+
+a {
+  cursor: pointer;
+}
+
+.level-select {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+}
+.level-select__choice {
+  color: white;
+  background: #22D1D4;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+.level-select__choice:last-of-type {
+  margin-right: 0;
+}
+.level-select__choice.active {
+  background: #1AEBB3;
+  color: #0a0e0e;
+}
+
+.demineur {
+  background: #cdcdcd;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0 0 13px #05464752;
+}
+.demineur .top {
+  background: #e5e5e5;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 5px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  flex: 1 1 auto;
+}
+.demineur .top .counter {
+  background: #454545;
+  height: 20px;
+  min-width: 50px;
+  border-radius: 3px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3px;
+}
+.demineur .top .start-stop {
+  background-color: transparent;
+  background-image: url("../img/smiley.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  min-width: 20px;
+  height: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
+  padding-top: 3px;
+  cursor: pointer;
+}
+.demineur .top .start-stop.start {
+  width: calc(100% - 10px);
+  position: absolute;
+  background: #19E073;
+}
+.demineur .top .start-stop.pause {
+  background: #E08819;
+}
+.demineur .top .timer {
+  background: #454545;
+  height: 20px;
+  min-width: 50px;
+  border-radius: 3px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3px;
+}
+.demineur .grid {
+  width: 180px;
+  height: 180px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+.demineur .grid .case {
+  width: 20px;
+  height: 20px;
+  background: #cdcdcd;
+  box-shadow: inset 1px 1px white, inset -1px -1px #878787;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: default;
+}
+.demineur .grid .case.mine {
+  background-image: url("../img/mine-explode.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+  box-shadow: none;
+}
+.demineur .grid .case.flag {
+  background-image: url("../img/flag.png");
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+.demineur .grid .case.flag-error {
+  background-image: url("../img/error.png") !important;
+  background-color: #e5e5e5 !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 20px !important;
+  box-shadow: none;
+}
+.demineur .grid .case.clicked {
+  background: #e5e5e5;
+  box-shadow: none;
+  border: 1px solid #cdcdcd;
+}
+.demineur .grid .case.clicked.neighbor1 {
+  color: #0000ff;
+}
+.demineur .grid .case.clicked.neighbor2 {
+  color: #007b00;
+}
+.demineur .grid .case.clicked.neighbor3 {
+  color: #ff0000;
+}
+.demineur .grid .case.clicked.neighbor4 {
+  color: #00007b;
+}
+.demineur .grid .case.clicked.neighbor5 {
+  color: #7b0000;
+}
+.demineur .grid .case.clicked.neighbor6 {
+  color: #007b7b;
+}
+.demineur .grid .case.clicked.neighbor7 {
+  color: #000000;
+}
+.demineur .grid .case.clicked.neighbor8 {
+  color: #7b7b7b;
+}
+.demineur .grid .case.answer {
+  box-shadow: none;
+  background: #e5e5e5 url("../img/mine.png");
+  background-color: #e5e5e5;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20px;
+}
+
+.result {
+  min-height: 20px;
+}
+
+/*# sourceMappingURL=styles.css.map */
